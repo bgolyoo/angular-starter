@@ -1,4 +1,5 @@
 .angular
+.husky
 .vscode
 .idea
 dist/
