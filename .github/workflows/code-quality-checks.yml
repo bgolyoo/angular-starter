@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch the entire history to ensure all commits are available for linting
 
       - name: Setup node.js
         uses: actions/setup-node@v4
