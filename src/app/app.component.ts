@@ -2,14 +2,12 @@ import { JsonPipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, signal } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { RouterOutlet } from '@angular/router';
 
 import { environment } from '@env/environment';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, JsonPipe],
+  imports: [JsonPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
